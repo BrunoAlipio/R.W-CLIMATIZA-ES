@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+    line-height: 1.6;
+    background-color: #182748;
+    color: #ffffff;
+}
+
+/* Estilo da Navegação */
+nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #182748;
+    color: #fff;
+    padding: 5px 15px; /* Reduzido para ocupar menos espaço */
+    display: flex;
+    align-items: center;
+    height: 100px; /* Altura definida para manter uma proporção menor */
+    border-bottom: 1px solid white;
+}
+
+/* Logo secundário no lado esquerdo do menu */
+.logo {
+    position: absolute; /* Posição absoluta para fixar no canto */
+    left: 10%; /* Ajusta para o canto esquerdo */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para o centro vertical */
+    max-width: 60px; /* Reduz tamanho do logo secundário */
+    height: auto;
+}
+
+/* Contêiner do Menu de Navegação */
+.nav-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o menu */
+    flex: 1;
+}
+
+/* Menu de Navegação */
+#navMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    gap: 15px; /* Espaçamento aumentado entre os itens */
+}
+
+
+#navMenu li {
+    margin: 0;
+}
+
+#navMenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    padding: 8px 12px; /* Adiciona um pouco de espaço ao redor do texto */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+#navMenu a:hover {
+    font-size: 22px;
+    text-shadow: 2px -2px 2px red;
+}
+
+main{
+    background-color: #182748;
+    margin-bottom: 100px;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h3{
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+figcaption ul{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    list-style: disc;
+    margin-left: 5%;
+}
+
+button{
+    width: 50%;
+    height: 60px;
+    background-color: rgb(3, 197, 3);
+    border: none;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px black;
+}
+
+button a{
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button .zap{
+    display: flex;
+    height: 60px;
+    width: 60px;
+}
+
+span{
+    color: rgb(255, 0, 0);
+}
+
+figure{
+    margin: auto;
+    background-color: #ffffff;
+    width: 40%;
+}
+
+figure img{
+    width: 100%;
+    height: 300px;
+}
+
+figcaption p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.pergunta{
+    border: 2px solid black;
+    background-color: #ffffff;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.pergunta h2{
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.pergunta p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 3%;
+}
+
+.pergunta ul{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    list-style: disc;
+    margin-left: 3%;
+}
+
+footer{
+    margin-top: auto;
+    background-color: red;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .missao{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .visao{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .valores{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;
+  }
+
+  footer ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 100px;
+  }
+
+@media(max-width: 600px){
+    figure{
+        margin: auto;
+        background-color: #ffffff;
+        width: 70%;
+    }
+
+    footer{
+        height: 550px;
+      }
+    
+      footer ul{
+        padding-left: 15px;
+      }
+  }
