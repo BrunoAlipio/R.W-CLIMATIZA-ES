@@ -37,7 +37,7 @@ nav {
     left: 10%; /* Ajusta para o canto esquerdo */
     top: 50%; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajusta para o centro vertical */
-    max-width: 60px; /* Reduz tamanho do logo secundário */
+    max-width: 100px; /* Reduz tamanho do logo secundário */
     height: auto;
 }
 
@@ -153,6 +153,10 @@ span{
     height: 100%;
 }
 
+.textos h1{
+  font-size: 38px;
+}
+
 .textos ul{
     margin-left: 10%;
     list-style-type: disc;
@@ -194,7 +198,7 @@ button a{
 
 .flutuantes {
   position: fixed;
-  bottom: 20px;
+  top: 100px;
   right: 20px;
   display: flex;
   flex-direction: column;
@@ -384,7 +388,7 @@ option{
   }
 
   footer p{
-    text-align: center;
+    text-align: start;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -418,7 +422,7 @@ option{
 
   .flutuantes {
     position: fixed;
-    bottom: 100px;
+    top: 100px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -426,8 +430,28 @@ option{
     z-index: 9999;
   }
 
+  @keyframes slide{
+    1%{
+      transform: translateX(0);
+    }
+    48%{
+      transform: translateX(-300%);
+    }
+    52%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-300%);
+    }
+  }
+
+  option{
+    display: flex;
+    justify-content: center;
+  }
+
   .box{
-    justify-content: start;
+    justify-content: center;
     align-items: center;
   }
 

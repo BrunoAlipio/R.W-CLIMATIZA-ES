@@ -38,7 +38,7 @@ nav {
     left: 10%; /* Ajusta para o canto esquerdo */
     top: 50%; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajusta para o centro vertical */
-    max-width: 60px; /* Reduz tamanho do logo secundário */
+    max-width: 100px; /* Reduz tamanho do logo secundário */
     height: auto;
 }
 
@@ -166,6 +166,8 @@ figcaption p{
 }
 
 .pergunta{
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid black;
     background-color: #ffffff;
     margin-top: 5%;
@@ -228,7 +230,7 @@ footer{
   }
 
   footer p{
-    text-align: center;
+    text-align: start;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
