@@ -435,13 +435,13 @@ option{
       transform: translateX(0);
     }
     48%{
-      transform: translateX(-300%);
+      transform: translateX(-400%);
     }
     52%{
       transform: translateX(0);
     }
     100%{
-      transform: translateX(-300%);
+      transform: translateX(-400%);
     }
   }
 
