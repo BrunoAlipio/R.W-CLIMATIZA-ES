@@ -6,7 +6,7 @@ const slide = document.getElementById('carousel-slide');
     index++;
     if (index >= images.length) index = 0;
     slide.style.transform = `translateX(-${index * 100}%)`;
-  }, 5000);
+  }, 1500);
 
   function logado() {
     const apagado = document.getElementById('apagado')
