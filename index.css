@@ -582,8 +582,8 @@ option{
     padding-top: 15px;
     padding-left: 25px;
     flex: 0 0 auto;
-    margin-left: 40px;
-    margin-right: 11px;
+    margin-left: 0px;
+    margin-right: 50px;
     transition: transform 0.5s ease-in-out;
     position: relative; /* necessário para animar */
   }
